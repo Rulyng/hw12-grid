@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  margin-bottom: 120px;
+  margin-top: 120px;
+}
+
+.item {
+  position: relative;
+}
+
+.icon {
+  opacity: 0;
+}
+
+.item:hover .icon {
+  opacity: 1;
+  transition: 1s;
+}
+
+.icon-heart,
+.icon-download {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.icon-heart {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.icon-download {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.title {
+  font-family: "Delius Unicase";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #000000;
+  margin-bottom: 80px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+/* global style */
+
+/* container architectural */
+
+.gallery1-foto2 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+.gallery1-foto3 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.gallery1-foto6 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+/* container life */
+
+.gallery2-foto2 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.gallery2-foto3 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.gallery2-foto5 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+/* container fashion */
+
+.gallery3-foto2 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.gallery3-foto5 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.gallery3-foto6 {
+  grid-row-start: 3;
+  grid-row-end: 5;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.gallery3-foto8 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.gallery3-foto9 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
